@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todo list</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+	<script type="text/template" id="wrapper-template">
+	<div class="container">
+		<div class="wrapper">
+			<p>ToDo list</p>
+			<ol class="item-list"></ol>
+			<div class="controls">
+				<input type="text" class="item-value">
+				<button class="item-add">Add task</button>
+			</div>
+		</div>
+		</div><!-- end container -->
+	</script>
+
+	<script type="text/template" id="list-template">
+		<% for( var i = 0; i < data.length; i++ ){ %>
+			<li class="list-item">
+			<%= data[i] %>
+			<span data-value="<%= data[i] %>" class="item-delete" title="Delete task">x</span>
+			<span data-value="<%= data[i] %>" class="item-edit" title="Edit task">(edit)</span>
+			</li>
+		<% }; %>
+	</script>	
+</body>
+</html>
