@@ -1,7 +1,7 @@
 # jsHomework23_24
 ToDo list using MVC + require.js
 
-<h2><a href="https://logolevel.github.io/projects/todo_list/index.html">VIEW DEMO</a></h2>
+<h2><a href="https://logolevel.github.io/jsHomework23_24/">VIEW DEMO</a></h2>
 
 <p>Task:</p>
 <ol>
